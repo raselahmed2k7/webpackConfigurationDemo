@@ -1,22 +1,28 @@
 {
-  "name": "webpack",
+  "name": "webpackConfigurationDemo",
   "version": "1.0.0",
   "description": "Sample webpack configuration",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack dist/bundle.js --mode development main.js"
   },
+  "mode": "development",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raselahmed2k7/webpackConfigurationDemo.git"
   },
   "keywords": [
-    "Webpack"
+    "Webpack test"
   ],
   "author": "Rasel Ahmed",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/raselahmed2k7/webpackConfigurationDemo/issues"
   },
-  "homepage": "https://github.com/raselahmed2k7/webpackConfigurationDemo#readme"
+  "homepage": "https://github.com/raselahmed2k7/webpackConfigurationDemo#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
